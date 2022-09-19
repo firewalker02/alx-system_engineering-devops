@@ -3,4 +3,3 @@
 # key ~/.ssh/school with the user ubuntu
 ssh ubuntu@104.196.50.234 -i ~/.ssh/school
 
-//0XNzdhhFeQjTgHdxSoZx+COKEOZCnFna2cCSq1O7GEY 
