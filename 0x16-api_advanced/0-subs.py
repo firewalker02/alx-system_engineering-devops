@@ -18,7 +18,9 @@ def number_of_subscribers(subreddit):
         headers={"User-Agent": "Custom"},
     )
 
-    if request.status_code == 200: # code 200 is the code for active status
+    # code 200 is the code for OK status
+    if request.status_code == 200: 
         return request.json().get("data").get("subscribers")
+    # else 0 is returned
     else:
         return 0
