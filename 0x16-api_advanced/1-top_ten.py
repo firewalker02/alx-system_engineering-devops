@@ -10,7 +10,7 @@ import requests
 def top_ten(subreddit):
     """
     This is a function that queries the Reddit API
-    If the subreddit is non-existent , return None.
+    If the subreddit is non-existent , print None.
     """
    
     request = requests.get(
@@ -26,6 +26,6 @@ def top_ten(subreddit):
             redditTitle = newData.get("title")
             print(redditTitle)
     
-    # else None is returned
+    # else None is printed
     else:
         print(None)
