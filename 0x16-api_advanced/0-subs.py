@@ -10,8 +10,8 @@ import requests
 
 def number_of_subscribers(subreddit):
     """
-    Function that queries the Reddit API
-    - If not a valid subreddit, return 0.
+    This is a function that queries the Reddit API
+    If the sub reddit is non existent, returns 0.
     """
     request = requests.get(
         "https://www.reddit.com/r/{}/about.json".format(subreddit),
